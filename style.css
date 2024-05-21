@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização do Header */
+
+header  {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    max-width: 130px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #5e5e5e;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* Estilização da seção de links */
+
+
+section.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.abas, span  {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+.abas button {
+    padding: 10px 15px;
+    width: 550px;
+}
+
+button {
+    display: flex;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.25s;
+    background: none;
+    border: 1px solid #fff;
+}
+
+.abas button:hover {
+    transition: 0.25s;
+    transform: scaleX(1.05);
+    background-color: #101010;
+}
+
+button svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilização do footer */
+
+footer {
+    display: flex;
+    gap: 17px;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+footer a:hover {
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* Responsividade para dispositivos Moveis */
+
+@media (max-width:400px){
+    .abas button {
+        width: 340px;
+    }
+}
+
+@media (max-width: 450px){
+    .abas button {
+        width: 360px;
+    }
+}
+
+@media (max-width:350px){
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    header img {
+        max-width: 85px;
+        margin-bottom: 10px;
+
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    section.links {
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 15px;
+    
+    }
+    .abas button {
+        width: 280px;
+    }
+
+    footer a {
+        padding: 10px;
+    }
+
+    footer svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
